@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Last-Mile Logistics Encyclopedia</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Chart.js 4 -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Top fixed header -->
+    <header class="top-header">
+      <button id="sidebarToggle" class="btn btn--secondary btn--sm" aria-label="Открыть меню">☰</button>
+      <h1>Last-Mile Logistics</h1>
+      <nav class="nav-breadcrumbs" id="breadcrumb-content">Обзор мира</nav>
+    </header>
 
+    <div class="main-content">
+      <!-- Sidebar navigation -->
+      <aside class="sidebar" id="sidebar">
+        <h3 class="mb-8">Навигация</h3>
+        <ul id="sidebar-nav" class="nav-accordion"></ul>
+      </aside>
+
+      <!-- Main dynamic content -->
+      <main class="content-panel" id="app-content"></main>
+    </div>
+  </div>
+
+  <!-- Main logic -->
+  <script src="app.js"></script>
+</body>
+</html>
