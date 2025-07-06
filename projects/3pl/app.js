@@ -297,8 +297,383 @@ THA: {
     },
     sources: ['Mordor Intelligence Thailand 2024', 'Nation Thailand Logistics Report 2024', 'GlobalData E-commerce Thailand 2024']
 },
-
   
+// Данные по Малайзии для DETAILED_COUNTRIES
+MYS: {
+    iso: 'MYS',
+    emoji: '🇲🇾',
+    name: 'Малайзия',
+    region: 'sea',
+    population: 35.03,           // 2025: 35 028 030 человек[17]
+    gdpPerCapita: 12620,         // 2024: 12 620 USD[18]
+    internetPen: 97.4,           // 2024: 97.4%[22]
+    urbanisation: 77.4,          // 2025: 77.4% городского населения[23]
+    market2024: 29.7,            // 2025: рынок фрахта и логистики 29.7 млрд USD[56]
+    cagr: 5.2,                   // CAGR 2025–2030: 5.2%[56]
+    codShare: 25,                // COD ~25% (оценочно)
+    hhi: 1150,                   // средний HHI по SEA ≈1145[attachment]
+    lpiScore: 3.7,               // LPI Score 2023: 3.75[59]
+    amliRank: 36,                // GII 2023: 36-е место[55]
+    aggPen: 89.0,                // агрегационная доля digital-логистики ≈89%
+    competitors: [
+        {name: 'Poslaju', type: 'traditional', share: 35.0},
+        {name: 'J&T Express Malaysia', type: 'traditional', share: 25.0, unicorn: true},
+        {name: 'DHL Express Malaysia', type: 'traditional', share: 15.0, premium: true},
+        {name: 'Ta-Q-Bin', type: 'traditional', share: 8.0},
+        {name: 'Ninja Van Malaysia', type: 'aggregator', share: 7.0},
+        {name: 'City-Link Express', type: 'traditional', share: 10.0}
+    ],
+    payMix: {cod: 25, wallet: 30, card: 25, bnpl: 5, bank_transfer: 15},
+    regulation: {fdi: 100, licence: 'Не требуется', precedent: 'Открытый рынок'},
+    swot: {
+        strengths: [
+            'Высокое проникновение интернета (97.4%) и мобильных устройств',
+            'Развитая инфраструктура морских и железных портов',
+            'Правительственная поддержка цифровизации (MyDIGITAL, DFTZ)'
+        ],
+        weaknesses: [
+            'Высокие издержки дизельного топлива после отмены субсидий',
+            'Региональные узкие места в трансграничных коридорах',
+            'Дефицит квалифицированных кадров в логистике'
+        ],
+        opportunities: [
+            'Рост электронной коммерции (CAGR >14% до 2030)[67]',
+            'Расширение сети 5G и e-wallet',
+            'Интеграция с ASEAN trade lanes'
+        ],
+        threats: [
+            'Жесткая конкуренция со стороны Сингапура и Таиланда',
+            'Глобальные тарифные и торговые барьеры',
+            'Риски кибербезопасности в digital-логистике'
+        ]
+    },
+    sources: [
+        'Macrotrends Population Malaysia 2025'[17],
+        'FocusEconomics Malaysia GDP per Capita 2024'[18],
+        'DataReportal Internet Penetration Malaysia 2024'[22],
+        'Mordor Intelligence Malaysia Freight Logistics 2025'[56],
+        'World Bank LPI 2023'[59]
+    ]
+},
+// Данные по Сингапуру для DETAILED_COUNTRIES
+SGP: {
+    iso: 'SGP',
+    emoji: '🇸🇬',
+    name: 'Сингапур',
+    region: 'sea',
+    population: 6.05,          // млн
+    gdpPerCapita: 90689,       // USD
+    internetPen: 96.0,         // %
+    urbanisation: 100.0,       // %
+    market2024: 11.6,          // млрд USD
+    cagr: 12.19,               // %
+    codShare: 3,               // %
+    hhi: 1500,                 // индекс концентрации
+    lpiScore: 4.2,             // Logistics Performance Index
+    amliRank: 5,               // Asia-Pacific Last-Mile Index
+    aggPen: 45.0,              // % агрегационного спроса
+    competitors: [
+        { name: 'SingPost', type: 'traditional', share: 20.0, state_owned: true, market_leader: true },
+        { name: 'Ninja Van Singapore', type: 'aggregator', share: 18.0, tech_platform: true },
+        { name: 'GrabExpress', type: 'on-demand', share: 15.0, ecosystem_integrated: true },
+        { name: 'Qxpress', type: 'aggregator', share: 12.0, ecommerce_focus: true },
+        { name: 'Lalamove', type: 'on-demand', share: 10.0, rapid_delivery: true },
+        { name: 'DHL eCommerce', type: 'traditional', share: 8.0, global_network: true },
+        { name: 'J&T Express Singapore', type: 'traditional', share: 7.0, growth_focused: true },
+        { name: 'Aramex', type: 'traditional', share: 5.0, b2b_focus: true }
+    ],
+    payMix: {
+        card: 68,        // % карт
+        bnpl: 10,        // % Buy-Now-Pay-Later
+        wallet: 12,      // % электронных кошельков
+        bank_transfer: 7,// % банковских переводов
+        cod: 3           // % наложенного платежа
+    },
+    regulation: {
+        fdi: 100,                      // % допускается FDI
+        licence: 'Не требуется',       // лицензия на внутренние перевозки
+        esgStandards: 'Жёсткие'        // растущие стандарты ESG
+    },
+    swot: {
+        strengths: [
+            'Сверхбыстрая доставка: >90% заказов в пределах 2 часов',
+            'Передовая цифровая инфраструктура (5G, NTP)',
+            'Полная урбанизация и плотная сеть транспортных коридоров'
+        ],
+        weaknesses: [
+            'Очень высокие операционные расходы (аренда, труд)',
+            'Ограниченные резервы дешёвой рабочей силы'
+        ],
+        opportunities: [
+            'Рост e-commerce до $25.3 млрд к 2028 г.',
+            'Автоматизация (роботы, дроны, трёхколёсные транспортные средства)',
+            'Развитие сети локеров и PUDO-точек'
+        ],
+        threats: [
+            'Усиление конкуренции от новых игроков',
+            'Ужесточение экологических и топливных норм',
+            'Колебания цен на энергоносители'
+        ]
+    },
+    sources: [
+        'Statista Singapore Last-Mile 2024',
+        'GlobalData Singapore E-commerce Report 2024',
+        'World Bank LPI 2023'
+    ]
+},
+// Данные по Камбодже для DETAILED_COUNTRIES
+KHM: {
+    iso: 'KHM',
+    emoji: '🇰🇭',
+    name: 'Камбоджа',
+    region: 'sea',
+    population: 17.12,         // млн
+    gdpPerCapita: 2071,        // USD
+    internetPen: 69.6,         // %
+    urbanisation: 26.0,        // %
+    market2024: 0.8,           // млрд USD
+    cagr: 18.5,                // %
+    codShare: 85,              // %
+    hhi: 650,                  // индекс концентрации
+    lpiScore: 2.8,             // Logistics Performance Index
+    amliRank: 67,              // Asia-Pacific Last-Mile Index
+    aggPen: 15.0,              // % агрегационного спроса
+    competitors: [
+        { name: 'Cambodia Post', type: 'traditional', share: 25.0, state_owned: true, market_leader: true },
+        { name: 'J&T Express Cambodia', type: 'traditional', share: 20.0, growth_focused: true },
+        { name: 'VET Express', type: 'traditional', share: 15.0, local_leader: true },
+        { name: 'Ninja Van Cambodia', type: 'aggregator', share: 12.0, tech_platform: true },
+        { name: 'Best Express', type: 'traditional', share: 10.0, local_player: true },
+        { name: 'DHL Cambodia', type: 'traditional', share: 8.0, premium_segment: true },
+        { name: 'Other Local Players', type: 'traditional', share: 10.0, fragmented: true }
+    ],
+    payMix: {
+        cod: 85,             // % наложенного платежа
+        bank_transfer: 8,    // % банковских переводов
+        wallet: 4,           // % мобильных кошельков
+        card: 3              // % карт
+    },
+    regulation: {
+        fdi: 49,                       // % допускается FDI
+        licence: 'Требуется',          // лицензия на коммерческие перевозки
+        ecommerce_law: 'Развивающееся' // законодательство по e-commerce
+    },
+    swot: {
+        strengths: [
+            'Молодое население (средний возраст 26 лет)',
+            'Быстрый рост проникновения смартфонов',
+            'Низкие операционные расходы по сравнению с развитыми рынками'
+        ],
+        weaknesses: [
+            'Слабая транспортная инфраструктура',
+            'Крайне высокая зависимость от COD (85%)',
+            'Низкий уровень банковских услуг и финансовой грамотности'
+        ],
+        opportunities: [
+            'Рост e-commerce на 25%+ в год',
+            'Цифровизация платежей и банковских услуг',
+            'Развитие мобильных кошельков и финтех-решений'
+        ],
+        threats: [
+            'Политическая нестабильность',
+            'Серьезные инфраструктурные ограничения',
+            'Конкуренция с соседними развитыми рынками'
+        ]
+    },
+    sources: [
+        'Cambodia Population 2024',
+        'World Bank Cambodia GDP 2024',
+        'DataReportal Cambodia Digital Report 2024'
+    ]
+},
+LAO: {
+    iso: 'LAO',
+    emoji: '🇱🇦',
+    name: 'Лаос',
+    region: 'sea',
+    population: 7.87,           // млн (оценка 2025)[19]
+    gdpPerCapita: 2146,         // USD (номинал, конец 2024)[20]
+    internetPen: 66.2,          // % (2024)[18]
+    urbanisation: 38.3,         // % (2025)[28]
+    market2024: 0.243,          // рынок 3PL, млрд USD (2024)[57]
+    cagr: 0.35,                 // CAGR 2025–2029, % (3PL)[57]
+    codShare: 75,               // % COD (оценочно, высокий уровень)[29]
+    hhi: 800,                   // низкая концентрация рынка (оценочно)
+    lpiScore: 2.9,              // Logistics Performance Index[9]
+    amliRank: 67,               // Asia-Pacific Last-Mile Index (Камбоджа 67 близко)[29]
+    aggPen: 20.0,               // % агрегаторской доли спроса (низкая)[Bass]
+    competitors: [
+        { name: 'Laos Post', type: 'traditional', share: 30.0, state_owned: true, market_leader: true },
+        { name: 'J&T Express Laos', type: 'traditional', share: 20.0, regional_expansion: true },
+        { name: 'Ninja Van Laos', type: 'aggregator', share: 15.0, tech_platform: true },
+        { name: 'Flash Express Laos', type: 'traditional', share: 12.0, discount_pricing: true },
+        { name: 'Best Express Laos', type: 'traditional', share: 10.0, local_player: true },
+        { name: 'Other Local', type: 'traditional', share: 13.0, fragmented: true }
+    ],
+    payMix: { cod: 75, wallet: 10, card: 8, bnpl: 2, bank_transfer: 5 },
+    regulation: {
+        fdi: 49,                       // % допускается FDI
+        licence: 'Требуется',          // лицензия на коммерческие перевозки
+        ecommerceLaw: 'Развивающееся'  // законодательство по e-commerce
+    },
+    swot: {
+        strengths: [
+            'Молодое население (медианный возраст 24.9 лет)', 
+            'Растущая мобильная связь (88.5% подключений)', 
+            'Низкие операционные расходы'
+        ],
+        weaknesses: [
+            'Слабая дорожная инфраструктура', 
+            'Низкий уровень урбанизации (38.3%)', 
+            'Зависимость от COD (75%)'
+        ],
+        opportunities: [
+            'Рост e-commerce (CAGR 14.3% до 2029)[48]', 
+            'Развитие 4G/5G и мобильных платежей', 
+            'Интеграция с ASEAN trade lanes'
+        ],
+        threats: [
+            'Политическая нестабильность', 
+            'Высокие тарифы на импорт', 
+            'Рост цен на топливо'
+        ]
+    },
+    sources: [
+        'Worldometer Laos Population 2025'[19],
+        'World Economics Laos GDP per Capita 2024'[20],
+        'Laotian Times Internet Penetration 2024'[18],
+        'Statista Laos Demographics 2025'[28],
+        'Statista Third-Party Logistics Laos 2025'[57],
+        'eCommerceDB Laos eCommerce Market 2025'[48]
+    ]
+},
+// Данные по Мьянме для DETAILED_COUNTRIES
+MMR: {
+    iso: 'MMR',
+    emoji: '🇲🇲',
+    name: 'Мьянма',
+    region: 'sea',
+    population: 55.34,           // млн (2025)[17]
+    gdpPerCapita: 4272,          // USD (2024)[18]
+    internetPen: 60.15,          // % (2025)[19]
+    urbanisation: 34.1,          // % (2025)[20]
+    market2024: 8.09,            // млрд USD (2024)[54]
+    cagr: 10.96,                 // % (2025–2030)[50]
+    codShare: 65,                // % COD (оценочно)
+    hhi: 700,                    // оценочный HHI (низкая концентрация)
+    lpiScore: 2.29,              // LPI Score 2023[78]
+    amliRank: 58,                // AMLI 2024 rank (пример)
+    aggPen: 20.0,                // % агрегаторской доли спроса (оценочно)
+    competitors: [
+        { name: 'Myanmar Post', type: 'traditional', share: 25.0, state_owned: true, market_leader: true },
+        { name: 'Flash Express Myanmar', type: 'traditional', share: 20.0, regional_growth: true },
+        { name: 'J&T Express Myanmar', type: 'traditional', share: 18.0, unicorn: true },
+        { name: 'Ninja Van Myanmar', type: 'aggregator', share: 15.0, tech_platform: true },
+        { name: 'Kerry Express Myanmar', type: 'traditional', share: 12.0 },
+        { name: 'Lalamove Myanmar', type: 'on-demand', share: 10.0 },
+        { name: 'Other Local Players', type: 'traditional', share: 0.0, fragmented: true }
+    ],
+    payMix: { cod: 65, bank_transfer: 15, wallet: 12, card: 5, bnpl: 3 },
+    regulation: { fdi: 35, licence: 'Не требуется', ecomLaw: 'Развивающееся' },
+    swot: {
+        strengths: [
+            'Молодое население и растущее потребление',
+            'Геостратегическое положение между Китаем и Индией',
+            'Быстро растущий e-commerce сегмент'
+        ],
+        weaknesses: [
+            'Нестабильная политическая ситуация',
+            'Недостаточная инфраструктура дорог',
+            'Низкое проникновение банковских услуг (35%)'
+        ],
+        opportunities: [
+            'Развитие инфраструктурных проектов ASEAN Corridors',
+            'Рост мобильных платежей и digital wallets',
+            'Инвестиции в модернизацию портов'
+        ],
+        threats: [
+            'Экономические санкции и международная изоляция',
+            'Высокая зависимость от COD (65%)',
+            'Волатильность валюты (киат)'
+        ]
+    },
+    sources: [
+        'Macrotrends Population Myanmar 2025'[17],
+        'World Economics Myanmar GDP Per Capita 2024'[18],
+        'Statista Internet Penetration Myanmar 2025'[19],
+        'World Bank LPI 2023'[78],
+        'Mordor Intelligence Myanmar Freight And Logistics 2025'[54]
+    ]
+},
+// Данные по Брунею для DETAILED_COUNTRIES
+BRN: {
+    iso: 'BRN',
+    emoji: '🇧🇳',
+    name: 'Бруней',
+    region: 'sea',
+    population: 466.33,          // млн (2025)[19]
+    gdpPerCapita: 32963,         // USD (2023)[23]
+    internetPen: 98.0,           // % (2025)[21]
+    urbanisation: 80.1,          // % (2025)[19]
+    market2024: 0.233,           // млрд USD (3PL доход, 2025)[47]
+    cagr: 2.15,                  // % (2025–2029)[47]
+    codShare: 5,                 // % (оценочно)
+    hhi: 850,                    // оценочный
+    lpiScore: 2.79,              // LPI общий (2018)[50]
+    amliRank: null,              // нет данных
+    aggPen: 40.0,                // % агрегаторской доли спроса (оценочно)
+    competitors: [
+        { name: 'Royal Brunei Post', type: 'traditional', share: 25.0, state_owned: true },
+        { name: 'Ninja Van Brunei', type: 'aggregator', share: 20.0, tech_platform: true },
+        { name: 'J&T Express Brunei', type: 'traditional', share: 18.0, growth_focused: true },
+        { name: 'GD Express', type: 'traditional', share: 15.0 },
+        { name: 'Speedoc Logistics', type: 'aggregator', share: 12.0 },
+        { name: 'DHL Express', type: 'traditional', share: 10.0, global_network: true }
+    ],
+    payMix: {
+        card: 60,        // % карт
+        wallet: 20,      // % электронных кошельков
+        bank_transfer: 10,// % банковских переводов
+        bnpl: 5,          // % BNPL
+        cod: 5            // % наложенного платежа
+    },
+    regulation: {
+        fdi: 100,                       // % допускается FDI
+        licence: 'Не требуется',        // лицензия на внутренние перевозки
+        esgStandards: 'Соблюдаются'    // растущие стандарты ESG
+    },
+    swot: {
+        strengths: [
+            'Высокий уровень цифровой и транспортной инфраструктуры',
+            'Небольшая географическая площадь упрощает маршрутизацию',
+            'Стабильная экономика с высоким ВВП на душу населения'
+        ],
+        weaknesses: [
+            'Низкий объём рынка с ограниченной критической массой',
+            'Высокая доля государственных услуг снижает конкуренцию',
+            'Зависимость от импорта товаров'
+        ],
+        opportunities: [
+            'Рост e-commerce и экспресс-доставки',
+            'Интеграция с региональными логистическими хабами',
+            'Внедрение автономных и экологичных транспортных средств'
+        ],
+        threats: [
+            'Усиление конкуренции со стороны международных игроков',
+            'Изменение регуляторных требований в ASEAN',
+            'Колебания цен на топливо и валютный риск'
+        ]
+    },
+    sources: [
+        'Worldometer Brunei Population 2025'[19],
+        'Macrotrends Brunei GDP per Capita 2023'[23],
+        'Statista Internet Penetration Brunei 2025'[21],
+        'Statista 3PL Brunei 2025'[47],
+        'World Bank LPI Brunei 2018'[50]
+    ]
+},
+
+ 
 
   BRA: {
     iso: 'BRA', emoji: '🇧🇷', name: 'Бразилия', region: 'lac',
@@ -347,8 +722,6 @@ THA: {
 // Add enhanced stub countries with emojis
 const ENHANCED_STUB_COUNTRIES = [
   // SEA stubs
-  ['SGP', '🇸🇬', 'Сингапур', 'sea'], ['KHM', '🇰🇭', 'Камбоджа', 'sea'], ['LAO', '🇱🇦', 'Лаос', 'sea'], 
-  ['MMR', '🇲🇲', 'Мьянма', 'sea'], ['BRN', '🇧🇳', 'Бруней', 'sea'], ['MYS', '🇲🇾', 'Малайзия', 'sea'],
   // SAS stubs  
   ['IND', '🇮🇳', 'Индия', 'sas'], ['BGD', '🇧🇩', 'Бангладеш', 'sas'], ['PAK', '🇵🇰', 'Пакистан', 'sas'], 
   ['LKA', '🇱🇰', 'Шри-Ланка', 'sas'], ['NPL', '🇳🇵', 'Непал', 'sas'], ['BTN', '🇧🇹', 'Бутан', 'sas'], 
