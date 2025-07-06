@@ -243,6 +243,63 @@ const DETAILED_COUNTRIES = {
     sources: ['Vietnam E-commerce Report 2024', 'Nikkei Asia Logistics 2024', 'World Bank Vietnam 2024']
   },
 
+THA: {
+    iso: 'THA',
+    emoji: '🇹🇭',
+    name: 'Тайланд',
+    region: 'sea',
+    population: 71.8,
+    gdpPerCapita: 7492,
+    internetPen: 88.0,
+    urbanisation: 52.1,
+    market2024: 3.1,
+    cagr: 12.5,
+    codShare: 28,
+    hhi: 920,
+    lpiScore: 3.5,
+    amliRank: 41,
+    aggPen: 35.2,
+    competitors: [
+        {name: 'Kerry Express', type: 'traditional', share: 28.5, ebitda: 9.3, market_leader: true, local_leader: true},
+        {name: 'Flash Express', type: 'traditional', share: 25.2, ebitda: 6.7, unicorn: true, growth_focused: true},
+        {name: 'Thailand Post', type: 'traditional', share: 18.4, ebitda: 2.8, state_owned: true, legacy_player: true},
+        {name: 'J&T Express Thailand', type: 'traditional', share: 8.9, ebitda: 5.1, regional_expansion: true},
+        {name: 'Ninja Van Thailand', type: 'aggregator', share: 6.8, ebitda: 3.2, tech_platform: true},
+        {name: 'Best Express', type: 'traditional', share: 4.2, ebitda: 4.5, local_player: true}
+    ],
+    payMix: {cod: 28, wallet: 22, card: 21, bnpl: 7, bank_transfer: 22},
+    regulation: {fdi: 49, licence: 'Требуется FBL', precedent: 'Ограничения на внутренние перевозки'},
+    swot: {
+        strengths: [
+            'Развитая цифровая экосистема с высоким проникновением PromptPay',
+            'Стратегическое расположение как логистический хаб АСЕАН',
+            'Сильная туристическая индустрия стимулирует спрос на доставку',
+            'Высокое проникновение интернета и смартфонов (88%)'
+        ],
+        weaknesses: [
+            'Заторы в Бангкоке значительно увеличивают время доставки',
+            'Остается значительная доля COD (28%) требующая оборотного капитала',
+            'Фрагментированный рынок с множеством мелких игроков',
+            'Ограничения FDI на внутренние транспортные услуги'
+        ],
+        opportunities: [
+            'Растущий рынок электронной коммерции ($66.7B к 2024)',
+            'Правительственная инициатива Eastern Economic Corridor (EEC)',
+            'Развитие сетей умных локеров в торговых центрах',
+            'Интеграция с региональными цепочками поставок'
+        ],
+        threats: [
+            'Интенсивная ценовая конкуренция между игроками',
+            'Усиление регулирования иностранных инвестиций',
+            'Экономическое замедление может снизить потребительские расходы',
+            'Растущие затраты на топливо влияют на рентабельность'
+        ]
+    },
+    sources: ['Mordor Intelligence Thailand 2024', 'Nation Thailand Logistics Report 2024', 'GlobalData E-commerce Thailand 2024']
+},
+
+  
+
   BRA: {
     iso: 'BRA', emoji: '🇧🇷', name: 'Бразилия', region: 'lac',
     population: 212.6, gdpPerCapita: 8670, internetPen: 74.0, urbanisation: 87.1,
