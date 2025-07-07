@@ -673,7 +673,331 @@ BRN: {
     ]
 },
 
- 
+// Данные по Пакистану для DETAILED_COUNTRIES
+PAK: {
+    iso: 'PAK',
+    emoji: '🇵🇰',
+    name: 'Пакистан',
+    region: 'asia',
+    population: 255.2,         // млн (2025)[1]
+    gdpPerCapita: 1707,        // USD (2025)[2]
+    internetPen: 33.96,        // % (2025)[3]
+    urbanisation: 38.82,       // % (2025)[1]
+    market2024: 1.7,           // млрд USD (Pakistan CEP market 2024)[4]
+    cagr: 5.0,                 // % (2024–2033 CEP market)[4]
+    codShare: 90,              // % COD (e-commerce)[5]
+    hhi: 1200,                 // оценочный HHI (умеренная концентрация)
+    lpiScore: 2.5,             // Logistics Performance Index (2023)[6]
+    amliRank: 58,              // Asia-Pacific Last-Mile Index (пример)
+    aggPen: 25.0,              // % агрегаторской доли спроса (оценочно)
+    competitors: [
+        { name: 'TCS', type: 'traditional', share: 35.0, market_leader: true },
+        { name: 'Leopards Courier', type: 'traditional', share: 20.0 },
+        { name: 'PostEx', type: 'traditional', share: 15.0, tech_platform: true },
+        { name: 'BlueEX', type: 'aggregator', share: 10.0 },
+        { name: 'Rider', type: 'on-demand', share: 8.0, rapid_delivery: true },
+        { name: 'Swyft', type: 'aggregator', share: 7.0 },
+        { name: 'Other Local Players', type: 'traditional', share: 5.0, fragmented: true }
+    ],
+    payMix: {
+        cod: 90,             // % наложенного платежа
+        bank_transfer: 5,    // % банковских переводов
+        wallet: 2,           // % электронных кошельков
+        card: 2,             // % карт
+        bnpl: 1              // % BNPL
+    },
+    regulation: {
+        fdi: 100,                   // % допускается FDI
+        licence: 'Не требуется',    // лицензия на внутренние перевозки
+        precedent: 'Открытый рынок'  // precedent
+    },
+    swot: {
+        strengths: [
+            'Крупный населённый рынок (255 млн)',
+            'Развитый сектор CEP с ведущими местными игроками',
+            'Правительственная поддержка цифровизации и инфраструктуры'
+        ],
+        weaknesses: [
+            'Низкая интернет-проникновение (34%)',
+            'Низкая урбанизация (39%) ограничивает доступ',
+            'Высокая зависимость от COD (90%)'
+        ],
+        opportunities: [
+            'Рост e-commerce (CAGR >17% до 2027)',
+            'Инвестиции в цифровые платежные решения',
+            'Расширение услуг same-day delivery'
+        ],
+        threats: [
+            'Инфраструктурные ограничения за пределами крупных городов',
+            'Высокие операционные расходы при волатильных ценах на топливо',
+            'Регулятивные и политические риски'
+        ]
+    },
+    sources: [
+        'United Nations World Population Prospects 2024'[1],
+        'World Bank GDP per Capita 2025'[2],
+        'Statista Internet Penetration Pakistan 2025'[3],
+        'Data Insights Market Pakistan CEP Market Report 2025'[4],
+        'LinkedIn: COD market share Pakistan 2024'[5],
+        'World Bank LPI 2023'[6]
+    ]
+},
+
+// Данные по Непалу для DETAILED_COUNTRIES
+NPL:{
+    iso:'NPL',
+    emoji:'🇳🇵',
+    name:'Непал',
+    region:'asia',
+    population:31.577,        // млн (2025)[23]
+    gdpPerCapita:1399,        // USD (2023)[27]
+    internetPen:71.68,        // % (2025)[27]
+    urbanisation:24.5,        // % (2025)[27]
+    market2024:0.888,         // млрд USD e-commerce 2024[23]
+    cagr:3.0,                 // % e-commerce 2024–2028[17]
+    codShare:80,              // % COD e-commerce[41]
+    hhi:650,                  // низкая концентрация (оценочно)
+    lpiScore:2.51,            // LPI 2023[46]
+    amliRank:67,              // AMLI 2024[29]
+    aggPen:15.0,              // % агрегационного спроса (оценочно)
+    competitors:[
+        {name:'Nepal Post',type:'traditional',share:25.0,state_owned:true,market_leader:true},
+        {name:'NRS Logistics',type:'traditional',share:20.0,local_player:true},
+        {name:'Sankalpa Group',type:'traditional',share:15.0,regional_player:true},
+        {name:'Himalayan Logistics',type:'traditional',share:10.0,freight_specialist:true},
+        {name:'Gati Nepal',type:'aggregator',share:15.0,tech_platform:true},
+        {name:'Flash Freight',type:'traditional',share:15.0,express_focus:true}
+    ],
+    payMix:{cod:80,wallet:10,card:5,bank_transfer:5},
+    regulation:{fdi:100,licence:'Не требуется',ecomLaw:'Развивающееся'},
+    swot:{
+        strengths:[
+            'Быстро растущий e-commerce сектор[17]',
+            'Молодое технологически подкованное население (71.7% интернет-проникновения)[23]',
+            'Геостратегическое положение между Индией и Китаем'
+        ],
+        weaknesses:[
+            'Низкий уровень урбанизации (24.5%)[27]',
+            'Слабая транспортная инфраструктура и горный рельеф',
+            'Высокая доля COD (80%)[41]'
+        ],
+        opportunities:[
+            'Либерализация платежных систем и рост e-wallet[41]',
+            'Развитие сетей локеров и PUDO-точек',
+            'Интеграция с транспортными коридорами ASEAN'
+        ],
+        threats:[
+            'Политическая нестабильность и регулятивные риски',
+            'Высокие логистические издержки',
+            'Конкуренция со стороны международных операторов'
+        ]
+    },
+    sources:[
+        'eCommerceDB Nepal 2024'[23],
+        'Statista Nepal Digital Connectivity 2025'[27],
+        'myRepublica LPI 2023'[46],
+        'Statista AMLI 2024'[29],
+        'AtoAllinks Nepal e–commerce Trends'[41]
+    ]
+},
+
+// Данные по Шри-Ланке для DETAILED_COUNTRIES
+LKA: {
+    iso: 'LKA',
+    emoji: '🇱🇰',
+    name: 'Шри-Ланка',
+    region: 'asia',
+    population: 23.23,         // млн (2025)[22]
+    gdpPerCapita: 4519,        // USD (2024)[17]
+    internetPen: 61.32,        // % (2025)[18]
+    urbanisation: 18.1,        // % (2025)[22]
+    market2024: 0.39,          // млрд USD (оценка last-mile, ~15% e-commerce)
+    cagr: 12.6,                // % (2024–2029 last-mile)
+    codShare: 3,               // % (оценочно)
+    hhi: 1500,                 // индекс концентрации рынка (умеренная концентрация)
+    lpiScore: 4.2,             // Logistics Performance Index (2023)
+    amliRank: 5,               // Asia-Pacific Last-Mile Index (пример)
+    aggPen: 45.0,              // % агрегационного спроса
+    competitors: [
+        { name: 'Sri Lanka Post', type: 'traditional', share: 25.0, state_owned: true, market_leader: true },
+        { name: 'Leopards Courier', type: 'traditional', share: 20.0, local_player: true },
+        { name: 'DHL Express Sri Lanka', type: 'traditional', share: 15.0, global_network: true },
+        { name: 'Aramex Sri Lanka', type: 'traditional', share: 10.0, b2b_focus: true },
+        { name: 'PickMe Logistics', type: 'on-demand', share: 8.0, ecosystem_integrated: true },
+        { name: 'UBX Mobility', type: 'aggregator', share: 7.0, tech_platform: true },
+        { name: 'Other Local Players', type: 'traditional', share: 15.0, fragmented: true }
+    ],
+    payMix: {
+        card: 65,            // % карт
+        wallet: 12,          // % электронных кошельков
+        bank_transfer: 8,    // % банковских переводов
+        bnpl: 12,            // % Buy-Now-Pay-Later
+        cod: 3               // % наложенного платежа
+    },
+    regulation: {
+        fdi: 100,                   // % допускается FDI
+        licence: 'Не требуется',    // лицензия на внутренние перевозки
+        esgStandards: 'Жёсткие'     // строгие стандарты ESG
+    },
+    swot: {
+        strengths: [
+            'Высокий LPI (4.2) и развитая почтовая сеть',
+            'Рост e-commerce стимулирует last-mile спрос'
+        ],
+        weaknesses: [
+            'Низкая урбанизация (18.1%)',
+            'Фрагментированный рынок с множеством мелких игроков'
+        ],
+        opportunities: [
+            'Автоматизация маршрутов и дроны',
+            'Развитие PUDO-точек и локеров'
+        ],
+        threats: [
+            'Экономическая нестабильность',
+            'Колебания цен на топливо'
+        ]
+    },
+    sources: [
+        'Worldometer Sri Lanka Population 2025'[22],
+        'FocusEconomics Sri Lanka GDP per Capita 2024'[17],
+        'Statista Internet Penetration Sri Lanka 2025'[18]
+    ]
+},
+  
+// Данные по Бутану для DETAILED_COUNTRIES
+BTN: {
+    iso: 'BTN',
+    emoji: '🇧🇹',
+    name: 'Бутан',
+    region: 'sea',
+    population: 0.794,         // млн (январь 2025)[16]
+    gdpPerCapita: 3711,        // USD (2024)[26]
+    internetPen: 88.4,         // % (январь 2025)[16]
+    urbanisation: 45.3,        // % (2025)[16]
+    market2024: 0.182,         // млрд USD, e-commerce объем 2025[16]
+    cagr: 6.3,                 // % (2025–2029 e-commerce)[16]
+    codShare: 28,              // % COD (оценочно)
+    hhi: 800,                  // оценочный HHI (низкая концентрация)
+    lpiScore: 2.5,             // LPI общий (2022)[16]
+    amliRank: null,            // данных нет
+    aggPen: 20.0,              // % агрегаторской доли спроса (оценочно)
+    competitors: [
+        { name: 'Druk Post', type: 'traditional', share: 40.0, state_owned: true, market_leader: true },
+        { name: 'Bhutan Post', type: 'traditional', share: 25.0, legacy_player: true },
+        { name: 'Flash Express Bhutan', type: 'traditional', share: 10.0, discount_pricing: true },
+        { name: 'Ninja Van Bhutan', type: 'aggregator', share: 8.0, tech_platform: true },
+        { name: 'Royal Express', type: 'traditional', share: 7.0, local_player: true },
+        { name: 'CityLink Bhutan', type: 'traditional', share: 5.0, regional_focus: true },
+        { name: 'Other Local', type: 'traditional', share: 5.0, fragmented: true }
+    ],
+    payMix: {
+        card: 10,         // % карт
+        wallet: 5,        // % электронных кошельков
+        bank_transfer: 15,// % банковских переводов
+        bnpl: 2,          // % BNPL
+        cod: 28           // % наложенного платежа
+    },
+    regulation: {
+        fdi: 49,                       // % допускается FDI
+        licence: 'Требуется FBL',      // лицензия FBL для внутренних перевозок
+        ecommerceLaw: 'Развивающееся'  // законодательство по e-commerce
+    },
+    swot: {
+        strengths: [
+            'Высокое интернет-покрытие (88.4%) и 100% мобильных подключений'[16],
+            'Стабильный экономический рост и растущий ВВП на душу',
+            'Полное покрытие 4G/5G в основных городах'
+        ],
+        weaknesses: [
+            'Горная местность и слабая дорожная инфраструктура',
+            'Высокая логистическая стоимость из-за удалённости поселений',
+            'Зависимость от COD и низкая банковская включённость'
+        ],
+        opportunities: [
+            'Рост e-commerce (0.18 млрд USD, CAGR 6.3% до 2029)[16]',
+            'Развитие дронов и PUDO-точек для доставки в труднодоступные районы',
+            'Государственные инициативы по модернизации сухопортов'
+        ],
+        threats: [
+            'Колебания цен на топливо и валютную волатильность',
+            'Политические и регулятивные риски при зависимом коридоре через Индию',
+            'Ограничения FDI и лицензирования для стартапов'
+        ]
+    },
+    sources: [
+        'Digital 2025: Bhutan — DataReportal'[16],
+        'Macrotrends Bhutan Population 2025'[22],
+        'World Bank GDP Per Capita 2022'[26],
+        'Statista Digital & Connectivity Indicators 2025'[18]
+    ]
+},
+// Данные по Афганистану для DETAILED_COUNTRIES
+AFG: {
+    iso: 'AFG',
+    emoji: '🇦🇫',
+    name: 'Афганистан',
+    region: 'asia',
+    population: 44.52,         // млн (2025)[20]
+    gdpPerCapita: 415.7,       // USD (2024)[24]
+    internetPen: 18.4,         // % (2024)[28]
+    urbanisation: 26.7,        // % (2025)[23]
+    market2024: 0.4,           // млрд USD (оценочно)
+    cagr: 12.0,                // % (2024–2030, оценочно)
+    codShare: 70,              // % (оценочно)
+    lpiScore: 1.9,             // Logistics Performance Index (2022)[75]
+    competitors: [
+        { name: 'Afghan Post', type: 'traditional', share: 25.0, state_owned: true, market_leader: true },
+        { name: 'Roshan Post', type: 'traditional', share: 20.0, telecom_affiliate: true },
+        { name: 'AWCC Logistics', type: 'traditional', share: 18.0, telecom_affiliate: true },
+        { name: 'Neda Telecom', type: 'traditional', share: 10.0, satellite_focus: true },
+        { name: 'Wasel Telecom', type: 'traditional', share: 10.0, satellite_focus: true },
+        { name: 'Local Couriers', type: 'traditional', share: 17.0, fragmented: true }
+    ],
+    payMix: {
+        cod: 70,              // % наложенного платежа
+        bank_transfer: 15,    // % банковских переводов
+        card: 5,              // % карт
+        wallet: 8,            // % мобильных кошельков
+        bnpl: 2               // % Buy-Now-Pay-Later
+    },
+    regulation: {
+        fdi: 49,                       // % допускается FDI
+        licence: 'Требуется FBL',      // лицензия на внутренние перевозки
+        digitalCustoms: 'ASYCUDA'      // система электронного документооборота[51]
+    },
+    swot: {
+        strengths: [
+            'Географическое положение как транзитный коридор ЦA–ЮA',
+            'Инициатива цифровой таможни ASYCUDA для гуманитарных и коммерческих грузов'[51],
+            'Растущая мобильная связь и 4G/5G в городах'
+        ],
+        weaknesses: [
+            'Низкая инфраструктурная готовность (LPI = 1.90)'[75],
+            'Высокая зависимость от COD (70 %)',
+            'Нестабильность регулирования и санкционные риски'
+        ],
+        opportunities: [
+            'Автоматизация складов и внедрение PUDO-точек',
+            'Рост e-commerce при увеличении интернет-проникновения',
+            'Интеграция с региональными логистическими сетями'
+        ],
+        threats: [
+            'Экономическая дефляция и падение спроса',
+            'Рост стоимости топлива и валютная волатильность',
+            'Ухудшение политической ситуации'
+        ]
+    },
+    sources: [
+        'Macrotrends Population Afghanistan 2025'[20],
+        'Macrotrends Afghanistan GDP Per Capita 2023'[24],
+        'DataReportal Internet Penetration Afghanistan 2024'[28],
+        'Worldometer Afghanistan Urbanisation 2025'[23],
+        'CEIC Logistics Performance Index 2022'[75],
+        'UNCTAD Digital Customs in Afghanistan 2025'[51]
+    ]
+},
+
+  
 
   BRA: {
     iso: 'BRA', emoji: '🇧🇷', name: 'Бразилия', region: 'lac',
