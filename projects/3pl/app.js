@@ -2639,7 +2639,7 @@ GTM: {
   codShare: 45,               // %
   hhi: 1300,
   lpiScore: 2.6,              // 2022
-  amliRank:  fifty-five,      // оценка
+  amliRank:  55,      // оценка
   aggPen: 22,                 // %
   competitors: [
     {name: 'Correos de Guatemala', type: 'state', share: 20.0, ebitda: 4.5, state_owned: true},
