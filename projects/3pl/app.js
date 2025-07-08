@@ -4755,16 +4755,17 @@ window.addEventListener('DOMContentLoaded', () => {
         toggleSidebar();
       }
     });
+
   } catch (error) {
     console.error('Initialization error:', error);
   }
-});
+-});
++}     // Закрыть блок try–catch (уровень 2)
++});   // Закрыть стрелочную функцию-обработчик DOMContentLoaded (уровень 1)
 
+/* --- остальной код без изменений --- */
 window.addEventListener('hashchange', router);
 
 // Make functions globally available
 window.navigateTo = navigateTo;
 window.toggleRegion = toggleRegion;
-+}
-+}
-+}
