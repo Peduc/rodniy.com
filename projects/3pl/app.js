@@ -486,6 +486,7 @@ KHM: {
         'DataReportal Cambodia Digital Report 2024'
     ]
 },
+  
 LAO: {
     iso: 'LAO',
     emoji: '🇱🇦',
@@ -4764,3 +4765,6 @@ window.addEventListener('hashchange', router);
 // Make functions globally available
 window.navigateTo = navigateTo;
 window.toggleRegion = toggleRegion;
++}
++}
++}
