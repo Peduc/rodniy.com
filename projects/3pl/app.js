@@ -43,7 +43,7 @@ const DATA = {
       avgCOD:     72.4,
       avgHHI:     1120,
       countries: [
-        'NGA','ETH','EGY','KEN','TZA','UGA','ZAF','RWA','MOZ','ZMB'
+        'NGA','ETH','EGY','KEN','TZA','UGA','ZAF','RWA','MOZ','ZMB','CIV'
       ]
     },
     {
