@@ -3,71 +3,114 @@
 
 // ===================== ENHANCED DATA STRUCTURE =====================
 const DATA = {
-  world: { market2024: 401.9, avgCAGR: 11.2, regions: 6, countries: 50 },
+  world: {
+    market2024: 401.9,
+    avgCAGR:   11.2,
+    regions:    8,    // число регионов
+    countries: 57     // общее число стран
+  },
   regions: [
-    { 
-      id: 'sea', 
-      name: 'Юго-Восточная Азия', 
-      emoji: '🌏',
-      market2024: 114.6, 
-      cagr: 13.5, 
-      avgCOD: 65.8, 
-      avgHHI: 1145,
-      countries: ['IDN','PHL','VNM','THA','MYS','SGP','KHM','LAO','MMR','BRN']
+    {
+      id:      'sea',
+      name:    'Юго-Восточная Азия',
+      emoji:   '🌏',
+      market2024: 114.6,
+      cagr:       13.5,
+      avgCOD:     65.8,
+      avgHHI:     1145,
+      countries: [
+        'IDN','PHL','VNM','THA','MYS','SGP','KHM','LAO','MMR','BRN'
+      ]
     },
-    { 
-      id: 'sas', 
-      name: 'Южная Азия', 
-      emoji: '🇮🇳',
-      market2024: 89.3, 
-      cagr: 14.2, 
-      avgCOD: 58.4, 
-      avgHHI: 890,
-      countries: ['IND','BGD','PAK','LKA','NPL','BTN','MDV','AFG']
+    {
+      id:      'sas',
+      name:    'Южная Азия',
+      emoji:   '🕌',
+      market2024:  58.3,
+      cagr:       14.2,
+      avgCOD:     58.4,
+      avgHHI:      890,
+      countries: [
+        'PAK','BGD','LKA','NPL','BTN','MDV'
+      ]
     },
-    { 
-      id: 'ssa', 
-      name: 'Африка к югу от Сахары', 
-      emoji: '🌍',
-      market2024: 45.3, 
-      cagr: 18.7, 
-      avgCOD: 72.1, 
-      avgHHI: 650,
-      countries: ['NGA','KEN','GHA','UGA','TZA','RWA','ETH','ZMB','MOZ','MDG']
+    {
+      id:      'ssa',
+      name:    'Африка к югу от Сахары',
+      emoji:   '🌍',
+      market2024:  89.3,
+      cagr:       12.1,
+      avgCOD:     72.4,
+      avgHHI:     1120,
+      countries: [
+        'NGA','ETH','EGY','KEN','TZA','UGA','ZAF','RWA','MOZ','ZMB'
+      ]
     },
-    { 
-      id: 'mena', 
-      name: 'Ближний Восток и Северная Африка', 
-      emoji: '🕌',
-      market2024: 78.2, 
-      cagr: 9.8, 
-      avgCOD: 45.3, 
-      avgHHI: 1230,
-      countries: ['EGY','MAR','JOR','LBN','TUN','DZA','IRQ','YEM','LBY','SDN']
+    {
+      id:      'lac',
+      name:    'Латинская Америка',
+      emoji:   '🌎',
+      market2024:  75.1,
+      cagr:       11.8,
+      avgCOD:     68.2,
+      avgHHI:     1189,
+      countries: [
+        'MEX','COL','ARG','BRA','CHL','PER','ECU','PRY','URY','BOL'
+      ]
     },
-    { 
-      id: 'lac', 
-      name: 'Латинская Америка', 
-      emoji: '🌎',
-      market2024: 52.7, 
-      cagr: 8.9, 
-      avgCOD: 38.9, 
-      avgHHI: 1456,
-      countries: ['BRA','MEX','COL','ARG','PER','CHL','ECU','GTM','BOL','PRY']
+    {
+      id:      'eeu',
+      name:    'Восточная Европа',
+      emoji:   '🏰',
+      market2024:  63.7,
+      cagr:       10.4,
+      avgCOD:     64.5,
+      avgHHI:     1210,
+      countries: [
+        'RUS','UKR','POL','ROU','HUN','CZE','BGR','HRV'
+      ]
     },
-    { 
-      id: 'eeu', 
-      name: 'Восточная Европа', 
-      emoji: '🏰',
-      market2024: 21.8, 
-      cagr: 7.2, 
-      avgCOD: 28.4, 
-      avgHHI: 1678,
-      countries: ['RUS','UKR','POL','ROU','HUN','BGR','HRV','SRB']
+    {
+      id:      'mena',
+      name:    'Ближний Восток и Северная Африка',
+      emoji:   '🕌',
+      market2024: 112.4,
+      cagr:       10.7,
+      avgCOD:     70.2,
+      avgHHI:     1105,
+      countries: [
+        'SAU','ARE','QAT','KWT','BHR','OMN','JOR','ISR','LBN','TUN','DZA','MAR'
+      ]
+    },
+    {
+      id:      'cau',
+      name:    'Кавказ',
+      emoji:   '⛰️',
+      market2024:   5.2,
+      cagr:        12.0,
+      avgCOD:      62.3,
+      avgHHI:     1020,
+      countries: [
+        'AZE','GEO','ARM'
+      ]
+    },
+    {
+      id:      'ssca',
+      name:    'Центральная Азия',
+      emoji:   '🏜️',
+      market2024:  12.8,
+      cagr:       11.5,
+      avgCOD:     60.7,
+      avgHHI:      950,
+      countries: [
+        'KAZ','KGZ','UZB','TJK','TKM'
+      ]
     }
   ],
   countries: {}
 };
+
+
 
 // Enhanced data for detailed countries
 const DETAILED_COUNTRIES = {
@@ -679,7 +722,7 @@ PAK: {
     iso: 'PAK',
     emoji: '🇵🇰',
     name: 'Пакистан',
-    region: 'asia',
+    region: 'sas',
     population: 255.2,         // млн (2025)[1]
     gdpPerCapita: 1707,        // USD (2025)[2]
     internetPen: 33.96,        // % (2025)[3]
@@ -749,7 +792,7 @@ NPL:{
     iso:'NPL',
     emoji:'🇳🇵',
     name:'Непал',
-    region:'asia',
+    region:'sas',
     population:31.577,        // млн (2025)[23]
     gdpPerCapita:1399,        // USD (2023)[27]
     internetPen:71.68,        // % (2025)[27]
@@ -807,7 +850,7 @@ LKA: {
     iso: 'LKA',
     emoji: '🇱🇰',
     name: 'Шри-Ланка',
-    region: 'asia',
+    region: 'sas',
     population: 23.23,         // млн (2025)[22]
     gdpPerCapita: 4519,        // USD (2024)[17]
     internetPen: 61.32,        // % (2025)[18]
@@ -870,7 +913,7 @@ BTN: {
     iso: 'BTN',
     emoji: '🇧🇹',
     name: 'Бутан',
-    region: 'sea',
+    region: 'sas',
     population: 0.794,         // млн (январь 2025)[16]
     gdpPerCapita: 3711,        // USD (2024)[26]
     internetPen: 88.4,         // % (январь 2025)[16]
@@ -1002,7 +1045,7 @@ MDV: {
     iso: 'MDV',
     emoji: '🇲🇻',
     name: 'Мальдивы',
-    region: 'sea',
+    region: 'sas',
     population: 529.676,       // тыс. (2025)[14]
     gdpPerCapita: 16549,        // USD (2023)[12]
     internetPen: 84.7,          // % (2025)[20]
@@ -1117,7 +1160,7 @@ KEN: {
     iso: 'KEN',
     emoji: '🇰🇪',
     name: 'Кения',
-    region: 'africa',
+    region: 'ssa',
     population: 54.4,          // млн (2025)
     gdpPerCapita: 1839,        // USD (2024)
     internetPen: 98.0,         // % среди активных мобильных абонентов (2025)[467]
@@ -1316,7 +1359,7 @@ GHA: {
     iso: 'GHA',
     emoji: '🇬🇭',
     name: 'Гана',
-    region: 'afr',
+    region: 'ssa',
     population: 33.7,           // млн (2025)[1]
     gdpPerCapita: 2490,         // USD (2023)[1]
     internetPen: 66.9,          // % (2025)[2]
@@ -1790,7 +1833,7 @@ UGA: {
     iso: 'UGA',
     emoji: '🇺🇬',
     name: 'Уганда',
-    region: 'afr',
+    region: 'ssa',
     population: 48.7,         // млн (2024)[104]
     gdpPerCapita: 931,        // USD (2024)[104]
     internetPen: 28.0,        // % (2025)[132]
@@ -1977,7 +2020,7 @@ TZA: {
     iso: 'TZA',
     emoji: '🇹🇿',
     name: 'Танзания',
-    region: 'afr',
+    region: 'ssa',
     population: 71.43,        // млн (2025)[15]
     gdpPerCapita: 1220,       // USD (2024)[13]
     internetPen: 72.0,        // % (март 2025)[14]
@@ -2171,7 +2214,7 @@ RWA: {
     iso: 'RWA',
     emoji: '🇷🇼',
     name: 'Руанда',
-    region: 'afr',
+    region: 'ssa',
     population: 14.569,       // млн (2025)[25]
     gdpPerCapita: 1028,       // USD (2024)[17]
     internetPen: 38.0,        // % (2025)[18]
@@ -2302,7 +2345,7 @@ ETH: {
     iso: 'ETH',
     emoji: '🇪🇹',
     name: 'Эфиопия',
-    region: 'afr',
+    region: 'ssa',
     population: 128.7,            // млн (2025)
     gdpPerCapita: 916.3,          // USD (2024)[46]
     internetPen: 28.0,            // % (2025)[59]
@@ -2436,7 +2479,7 @@ ZMB: {
     iso: 'ZMB',
     emoji: '🇿🇲',
     name: 'Замбия',
-    region: 'afr',
+    region: 'ssa',
     population: 21.913,         // млн (2025)[16]
     gdpPerCapita: 1331,         // USD (2023)[11]
     internetPen: 38.3,          // % (2025)[18]
@@ -2697,7 +2740,7 @@ MOZ: {
     iso: 'MOZ',
     emoji: '🇲🇿',
     name: 'Мозамбик',
-    region: 'afr',
+    region: 'ssa',
     population: 35.834,          // млн (2025)[19]
     gdpPerCapita: 653,           // USD (2024)[17]
     internetPen: 22.14,          // % (2025)[18]
