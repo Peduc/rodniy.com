@@ -3441,7 +3441,7 @@ KAZ: {
     iso: 'KAZ',
     emoji: '🇰🇿',
     name: 'Казахстан',
-    region: 'asia',
+    region: 'ssca',
     population: 20.056,        // млн (2025)[20]
     gdpPerCapita: 14207,       // USD (2024)[21]
     internetPen: 92.87,        // % (2025)[19]
@@ -3688,7 +3688,7 @@ KGZ: {
     iso: 'KGZ',
     emoji: '🇰🇬',
     name: 'Кыргызстан',
-    region: 'asia',
+    region: 'ssca',
     population: 7.295,         // млн (2025)[25]
     gdpPerCapita: 2470,         // USD (2024)[23]
     internetPen: 98.0,          // % (2025)[18]
