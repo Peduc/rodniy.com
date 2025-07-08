@@ -2347,7 +2347,8 @@ JOR: {
     threats: [
       "Региональная политическая нестабильность",
       "Рост цен на топливо и логистические издержки"
-    ],
+    ]
+  },
   // поля sources и прочие оставьте без изменений
  competitors: [
     { name: "Aramex", type: "local", sharePercent: 22.0, ebitdaMarginPercent: 13.5 },
