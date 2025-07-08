@@ -3813,8 +3813,7 @@ KGZ: {
       ]
     },
     sources: ['ABComm Brazil 2024', 'Valor Econômico 2024', 'Banco Central do Brasil 2024']
-  },
-  
+  }
 };
 
 // Add enhanced stub countries with emojis
