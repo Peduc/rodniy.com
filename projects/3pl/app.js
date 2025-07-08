@@ -1533,7 +1533,7 @@ CIV:{
     iso:'CIV',
     emoji:'🇨🇮',
     name:'Кот-д’Ивуар',
-    region:'afr',
+    region:'ssa',
     population:29.3288,       // млн (1 Jan 2025)[16]
     gdpPerCapita:2659,        // USD (2024)[17]
     internetPen:41.16,        // % (2025)[27]
