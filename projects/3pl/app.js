@@ -4759,12 +4759,9 @@ window.addEventListener('DOMContentLoaded', () => {
   } catch (error) {
     console.error('Initialization error:', error);
   }
-}   // ← #1: закрывает try–catch
-}); // ← #2: закрывает стрелочную функцию-обработчик DOMContentLoaded
-)
-}   // ← #3: **недостающая** скобка
+}); // ← закрывает стрелочную функцию и аргументы addEventListener
+}   // ← добавляет недостающую третью скобку, закрывающую анонимную функцию–обработчик
 
-/* --- остальной код без изменений --- */
 window.addEventListener('hashchange', router);
 
 // Make functions globally available
