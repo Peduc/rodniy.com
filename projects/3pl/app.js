@@ -4760,7 +4760,7 @@ window.addEventListener('DOMContentLoaded', () => {
     console.error('Initialization error:', error);
   }
 }); // ← закрывает стрелочную функцию и аргументы addEventListener
-}   // ← добавляет недостающую третью скобку, закрывающую анонимную функцию–обработчик
+// ← добавляет недостающую третью скобку, закрывающую анонимную функцию–обработчик
 
 window.addEventListener('hashchange', router);
 
