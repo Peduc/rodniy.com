@@ -4759,9 +4759,9 @@ window.addEventListener('DOMContentLoaded', () => {
   } catch (error) {
     console.error('Initialization error:', error);
   }
--});
-+}     // Закрыть блок try–catch (уровень 2)
-+});   // Закрыть стрелочную функцию-обработчик DOMContentLoaded (уровень 1)
+}   // ← #1: закрывает try–catch
+}); // ← #2: закрывает стрелочную функцию-обработчик DOMContentLoaded
+}   // ← #3: **недостающая** скобка
 
 /* --- остальной код без изменений --- */
 window.addEventListener('hashchange', router);
