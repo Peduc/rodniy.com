@@ -2946,7 +2946,7 @@ MDG:{
     sources:['Worldometer Madagascar Population 2025'[23],'FocusEconomics Madagascar GDP per Capita 2024'[15],'Statista Internet Penetration Madagascar 2025'[16]]
 },
 
-  DZA: {
+DZA: {
   iso: 'DZA',
   emoji: '🇩🇿',
   name: 'Алжир',
@@ -3607,6 +3607,7 @@ SDN: {
     "CEIC: Sudan Urbanization 2017"[74]
   ]
 },
+  
 SLV: {
   iso: 'SLV',
   emoji: '🇸🇻',
@@ -3770,6 +3771,7 @@ KGZ: {
         'AKIpress “LPI 2023: KGZ Score 2.3”'[66]
     ]
 },
+  
   BRA: {
     iso: 'BRA', emoji: '🇧🇷', name: 'Бразилия', region: 'lac',
     population: 212.6, gdpPerCapita: 8670, internetPen: 74.0, urbanisation: 87.1,
@@ -3812,6 +3814,7 @@ KGZ: {
     },
     sources: ['ABComm Brazil 2024', 'Valor Econômico 2024', 'Banco Central do Brasil 2024']
   }
+  
 };
 
 // Add enhanced stub countries with emojis
