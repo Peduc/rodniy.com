@@ -1588,70 +1588,66 @@ CIV:{
     ]
 },
 // Вставить в DETAILED_COUNTRIES:
-POL: {
-  iso: 'POL',
-  emoji: '🇵🇱',
-  name: 'Польша',
-  region: 'eeu',
-  population: 38.54,
-  gdpPerCapita: 22057,
-  internetPen: 95.9,
-  urbanisation: 60.2,
-  market2024: 862,        // млн отправлений CEP[96]
-  cagr: 11.8,             // прогноз 2024–2030[44]
-  codShare: 28.4,
-  hhi: 1678,
-  lpiScore: 2.8,
-  amliRank: 40,
-  aggPen: 30,
-  competitors: [
-    { name: 'inPost',           type: 'aggregator', share: 40.0, ebitda: 12.0, platform_owned: true },
-    { name: 'Poczta Polska',    type: 'traditional', share: 35.0, ebitda: 1.0,  state_owned: true },
-    { name: 'DPD Polska',       type: 'aggregator',  share: 8.0,  ebitda: 10.0, b2b_focused: true },
-    { name: 'DHL Parcel',       type: 'traditional', share: 7.5,  ebitda: 14.0, premium: true },
-    { name: 'GLS Poland',       type: 'traditional', share: 4.5,  ebitda: 11.0, regional: true },
-    { name: 'FedEx Poland',     type: 'traditional', share: 3.0,  ebitda: 9.0,  premium: true },
-    { name: 'UPS Poland',       type: 'traditional', share: 2.5,  ebitda: 10.5, b2b_focused: true },
-    { name: 'Raben Group',      type: 'traditional', share: 2.0,  ebitda: 8.5,  niche: true },
-    { name: 'XpressCouriers',   type: 'aggregator',  share: 1.2,  ebitda: -2.0, startup: true },
-    { name: 'PackagePoint',     type: 'aggregator',  share: 1.3,  ebitda: -3.5, regional: true }
-  ],
-  payMix: { cod: 28.4, wallet: 22, card: 45, bnpl: 4.6 },
-  regulation: {
-    fdi: 100,
-    licence: 'Комплексная',
-    precedent: 'Сделка СДЭК–DPD (2023)'
+// Обновлённый фрагмент для POL в const DETAILED_COUNTRIES:
+
+  POL: {
+    iso: 'POL',
+    emoji: '🇵🇱',
+    name: 'Польша',
+    region: 'eeu',
+    population: 38.54,       // млн человек
+    gdpPerCapita: 22057,     // USD[?]
+    internetPen: 95.9,       // %[?]
+    urbanisation: 60.2,      // %[?]
+    market2024: 1541,        // млн отправлений CEP (2023: 1541 млн)[13]
+    cagr: 5.3,               // % прогноз 2026–2032[?]
+    codShare: 28.4,          // % COD[?]
+    hhi: 1678,               // индекс концентрации рынка[?]
+    lpiScore: 2.8,           // Logistics Performance Index[?]
+    amliRank: 40,            // AMLI Rank[?]
+    aggPen: 30,              // % проникновения агрегаторов[?]
+    competitors: [
+      { name: 'inPost',        type: 'aggregator', share: 40.0, ebitda: 12.0, platform_owned: true },
+      { name: 'Poczta Polska', type: 'traditional', share: 35.0, ebitda:  1.0, state_owned: true },
+      { name: 'DPD Polska',    type: 'aggregator', share:  8.0, ebitda: 10.0, b2b_focused: true },
+      { name: 'DHL Parcel',    type: 'traditional', share:  7.5, ebitda: 14.0, premium: true },
+      { name: 'GLS Poland',    type: 'traditional', share:  4.5, ebitda: 11.0, regional: true },
+      { name: 'FedEx Poland',  type: 'traditional', share:  3.0, ebitda:  9.0, premium: true },
+      { name: 'UPS Poland',    type: 'traditional', share:  2.5, ebitda: 10.5, b2b_focused: true },
+      { name: 'Raben Group',   type: 'traditional', share:  2.0, ebitda:  8.5, niche: true },
+      { name: 'XpressCouriers',type: 'aggregator', share:  1.2, ebitda: -2.0, startup: true },
+      { name: 'PackagePoint',  type: 'aggregator', share:  1.3, ebitda: -3.5, regional: true }
+    ],
+    payMix: { cod: 28.4, wallet: 22.0, card: 45.0, bnpl: 4.6 },
+    regulation: {
+      fdi: 100,
+      licence: 'Комплексная',
+      precedent: 'Сделка СДЭК–DPD (2023)'
+    },
+    swot: {
+      strengths: [
+        'Лидирующая в Европе сеть автоматических постоматов[96]',
+        'Высокая доля OOH-доставки (33%)[56]',
+        'Значительный рост e-commerce (+22%)[96]'
+      ],
+      weaknesses: [
+        'Высокая доля COD увеличивает операционные расходы[35]',
+        'Фрагментированность last-mile рынка (HHI 1678)',
+        'Низкая адресная точность в сельских районах'
+      ],
+      opportunities: [
+        'Автоматизация сортировочных узлов (AMR, ASRS)',
+        'Развитие партнёрств по PUDO (Żabka, InPost)',
+        'Расширение digital-payment (Wallet, BNPL)'
+      ],
+      threats: [
+        'Геополитические риски и санкции',
+        'Рост цен на топливо',
+        'Вход международных агрегаторов после снятия барьеров'
+      ]
+    }
   },
-  swot: {
-    strengths: [
-      'Лидирующая в Европе сеть автоматических постоматов[96]',
-      'Высокая доля OOH-доставки (33%)[56]',
-      'Значительный рост e-commerce (+22%)[96]'
-    ],
-    weaknesses: [
-      'Высокая доля COD увеличивает операционные расходы[35]',
-      'Фрагментированность last-mile рынка (HHI 1678)',
-      'Низкая адресная точность в сельских районах'
-    ],
-    opportunities: [
-      'Автоматизация сортировочных узлов (AMR, ASRS)',
-      'Развитие партнёрств по PUDO (Żabka, InPost)',
-      'Расширение digital-payment (Wallet, BNPL)'
-    ],
-    threats: [
-      'Геополитические риски и санкции',
-      'Рост цен на топливо',
-      'Вход международных агрегаторов после снятия барьеров'
-    ]
-  },
-  sources: [
-    'Last Mile Experts Poland CEP 2022'[96],
-    'Statista Poland Population 2025'[19],
-    'YCharts Poland GDP per Capita 2023'[17],
-    'CEIC Poland Internet Penetration 2024'[18],
-    'UKE Parcel Machines Data 2022'[96]
-  ]
-},
+
 PER: {
   iso: 'PER',
   emoji: '🇵🇪',
