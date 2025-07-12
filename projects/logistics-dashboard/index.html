@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Дашборд логистических потоков</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Chart.js core -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js" defer></script>
+  <!-- Treemap plugin for Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-treemap@4.2.1/dist/chartjs-chart-treemap.umd.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="container py-16">
+    <h1 class="mb-8">Дашборд логистических потоков</h1>
+    <nav class="tabs flex gap-8" aria-label="Главные вкладки">
+      <button id="tab-russia" class="tab-button btn btn--primary" aria-controls="panel-russia" aria-selected="true">
+        Россия
+      </button>
+      <button id="tab-uzbekistan" class="tab-button btn btn--secondary" aria-controls="panel-uzbekistan" aria-selected="false">
+        Узбекистан
+      </button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Russia Panel -->
+    <section id="panel-russia" class="panel" role="tabpanel" aria-labelledby="tab-russia">
+      <div class="content-grid">
+        <div class="charts-column">
+          <div class="chart-container mb-8">
+            <h3 class="mb-8">Карта регионов по объему заказов</h3>
+            <div class="chart-wrapper treemap-container">
+              <canvas id="russia-treemap" class="chart-canvas"></canvas>
+            </div>
+          </div>
+          
+          <div class="chart-row">
+            <div class="chart-container">
+              <h4 class="mb-8">Топ-10 регионов-отправителей</h4>
+              <div class="chart-wrapper">
+                <canvas id="russia-senders" class="chart-canvas"></canvas>
+              </div>
+            </div>
+            
+            <div class="chart-container">
+              <h4 class="mb-8">Топ-10 регионов-получателей</h4>
+              <div class="chart-wrapper">
+                <canvas id="russia-receivers" class="chart-canvas"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <aside class="insights-sidebar">
+          <div class="card">
+            <div class="card__body">
+              <h3 class="mb-8">Ключевые инсайты</h3>
+              <ul id="russia-insights" class="insights-list"></ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Uzbekistan Panel -->
+    <section id="panel-uzbekistan" class="panel hidden" role="tabpanel" aria-labelledby="tab-uzbekistan">
+      <details class="methodology-card card mb-8" open>
+        <summary class="methodology-toggle">
+          <span class="methodology-title">Методология расчета</span>
+          <span class="methodology-icon">▼</span>
+        </summary>
+        <div class="methodology-content">
+          <ul class="methodology-list" id="methodology-list"></ul>
+        </div>
+      </details>
+
+      <div class="content-grid">
+        <div class="charts-column">
+          <div class="chart-container mb-8">
+            <h3 class="mb-8">Карта регионов по прогнозируемым заказам</h3>
+            <div class="chart-wrapper treemap-container">
+              <canvas id="uzbekistan-treemap" class="chart-canvas"></canvas>
+            </div>
+          </div>
+          
+          <div class="chart-row">
+            <div class="chart-container">
+              <h4 class="mb-8">Топ-10 по населению</h4>
+              <div class="chart-wrapper">
+                <canvas id="uzbekistan-population" class="chart-canvas"></canvas>
+              </div>
+            </div>
+            
+            <div class="chart-container">
+              <h4 class="mb-8">Прогнозируемые заказы</h4>
+              <div class="chart-wrapper">
+                <canvas id="uzbekistan-orders" class="chart-canvas"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <aside class="insights-sidebar">
+          <div class="card">
+            <div class="card__body">
+              <h3 class="mb-8">Ключевые инсайты</h3>
+              <ul id="uzbekistan-insights" class="insights-list"></ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
