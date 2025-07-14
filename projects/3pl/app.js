@@ -1599,13 +1599,15 @@ CIV:{
     gdpPerCapita: 22057,     // USD[?]
     internetPen: 95.9,       // %[?]
     urbanisation: 60.2,      // %[?]
-    market2024: 1541,        // млн отправлений CEP (2023: 1541 млн)[13]
+    market2024: 0.8,
     cagr: 5.3,               // % прогноз 2026–2032[?]
     codShare: 28.4,          // % COD[?]
     hhi: 1678,               // индекс концентрации рынка[?]
     lpiScore: 2.8,           // Logistics Performance Index[?]
     amliRank: 40,            // AMLI Rank[?]
     aggPen: 30,              // % проникновения агрегаторов[?]
+    // Можно добавить отдельно объём отправлений:
+    parcelVolume2024: 1541, // млн отправлений CEP
     competitors: [
       { name: 'inPost',        type: 'aggregator', share: 40.0, ebitda: 12.0, platform_owned: true },
       { name: 'Poczta Polska', type: 'traditional', share: 35.0, ebitda:  1.0, state_owned: true },
