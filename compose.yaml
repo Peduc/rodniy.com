@@ -1,0 +1,56 @@
+services:
+  web:
+    build: .
+    image: rodniy-chess:local
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      NODE_ENV: production
+      HOST: 0.0.0.0
+      DATABASE_PATH: /data/chess.sqlite
+      APP_ORIGIN: https://rodniy.com
+    volumes:
+      - chess-data:/data
+    expose:
+      - "3000"
+    mem_limit: 512m
+    cpus: 0.5
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+  worker:
+    image: rodniy-chess:local
+    restart: unless-stopped
+    command: ["npm", "run", "worker"]
+    env_file: .env
+    environment:
+      NODE_ENV: production
+      DATABASE_PATH: /data/chess.sqlite
+    volumes:
+      - chess-data:/data
+    depends_on:
+      web:
+        condition: service_healthy
+    mem_limit: 1536m
+    cpus: 1.0
+    stop_grace_period: 15s
+  proxy:
+    image: caddy:2
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    depends_on:
+      - web
+    mem_limit: 256m
+volumes:
+  chess-data:
+  caddy-data:
+  caddy-config:
