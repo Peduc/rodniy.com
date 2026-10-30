@@ -1,0 +1,9 @@
+rodniy.com {
+    encode zstd gzip
+    @root path /
+    redir @root /chess/ 308
+    reverse_proxy web:3000
+}
+www.rodniy.com {
+    redir https://rodniy.com{uri} 308
+}
